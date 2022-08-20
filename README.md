@@ -6,6 +6,7 @@
 **Turn queries into easy-to-use tools your teammates can share.**
 
 Parameterize! Visualize! Collaboratize?!
+  
 [![Django Tests](https://github.com/cforcross/qwaver/actions/workflows/unit-test.yml/badge.svg)](https://github.com/cforcross/qwaver/actions/workflows/unit-test.yml)
 [![Join the chat at https://gitter.im/qwaver-io/community](https://badges.gitter.im/qwaver-io/community.svg)](https://gitter.im/qwaver-io/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 <a href="https://github.com/brianrisk/qwaver/graphs/contributors">
