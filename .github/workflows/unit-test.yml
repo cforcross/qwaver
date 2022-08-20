@@ -27,6 +27,14 @@ jobs:
         pip install coverage
         coverage run manage.py test && coverage report --fail-under=50 && coverage xml
         coverage report
+    # Use the output from the `coverage` step
+    - name: Generate the badge SVG image
+      uses: emibcn/badge-action@v1
+      with:
+        label: 'Test coverage'
+        status: ${{ steps.coverage.outputs.lines }}
+        color: 'blue,555,daf'
+        path: badge.svg
     - name: Django Testing
       run: |
         python3 manage.py test
