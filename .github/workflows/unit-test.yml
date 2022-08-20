@@ -27,7 +27,7 @@ jobs:
         pip install coverage
         coverage run manage.py test && coverage report --fail-under=50 && coverage xml
         coverage report
-   - name: Extract branch name
+    - name: Extract branch name
       shell: bash
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: extract_branch
